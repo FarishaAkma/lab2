@@ -9,7 +9,7 @@ for (int i=0;i<13;i++){
 pid_t pid=fork();
 
 if (pid==0){
-printf("Child process => PPID=%d, PID=%d\n", getpid(), getpid());
+printf("Child process => PPID=%d, PID=%d\n", getppid(), getpid());
 exit(0);
 }
 else{
